@@ -1,30 +1,39 @@
 let pokemonList=[
+  {
   Name:"BABLASUR",
-  Height:7M,
-  Types:["GRASS","POISON"],
-  
+  Height:7,
+  Types:["GRASS","POISON"]
+  },
+  {
   Name:"PIKACHU",
-  Height:0.4M,
-  Types:"ELECTRIC",
-  
+  Height:0.4,
+  Types:["ELECTRIC"]
+  },
+  {
   Name:"ZUBAT",
-  Height:0.8M,
-  Types:["POISON","FLYING"],
-  
+  Height:0.8,
+  Types:["POISON","FLYING"]
+  },
+  {
+
   Name:"MEOWTH",
-  Height:0.4M,
-  Types:"NORMAL",
-  
+  Height:0.4,
+  Types:["NORMAL"]
+  },
+  {
   Name:"SEEL",
-  Height:1.1M,
-  Types:"WATER",
-  
+  Height:1.1,
+  Types:["WATER"]
+  },
+  {
   Name:"DODUO",
-  Height:1.4M,
+  Height:1.4,
   Types:["FLYIN","NORMAL"]
-  
+ } 
   ];
-document.write(pokemonList.Name);
-  
-
-
+   for(let i=0 ; i<pokemonList.length ; i++)
+      {  
+        if (pokemonList[i].Height>1.0)
+          {
+            document.write(pokemonList[i].Name + "<br>"  + " " + pokemonList[i].Height + "(WOW THAT'S BIG)" + "<br>"  + " " + pokemonList[i].Types + "<br>");}
+           } 
