@@ -1,0 +1,2 @@
+# simple-JS-app-1-
+MY FIRST JAVASCRIPT PROJECT
