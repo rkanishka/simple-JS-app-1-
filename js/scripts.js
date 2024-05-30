@@ -31,15 +31,8 @@
  } 
   ];
 
-      for(let i=0; i<pokemonList.length ; i++)
-       {  
-         if (pokemonList[i].Height > 1.0)
-           {
-             document.write("Name:" + pokemonList[i].Name + "<br>"  + " " + "Height:" + pokemonList[i].Height + "(WOW THAT'S BIG)" + "<br>"  + " " + "Types:" +  pokemonList[i].Types + "<br><br>")
-           }
-         else
-           {
-             document.write("Name:" + pokemonList[i].Name + "<br>"  + " " + "Height:" + pokemonList[i].Height  + "<br>"  + " " + "Types:" +  pokemonList[i].Types + "<br><br>")
-           }
-       
-      } 
+     function myPokemonFunction(Pokemon)
+    {
+      document.write("Name:" + Pokemon.Name + "<br>" + " " + "Height:" + Pokemon.Height + "<br>" + " " + "Types:" + Pokemon.Types + "<br><br>" );
+    } 
+     pokemonList.forEach(myPokemonFunction);
